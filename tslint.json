@@ -1,0 +1,9 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "@mulesoft/tslint-config-automation/tslint-config"
+  ],
+  "jsRules": {},
+  "rulesDirectory": ["node_modules/tslint-eslint-rules/dist/rules"]
+ }
+ 

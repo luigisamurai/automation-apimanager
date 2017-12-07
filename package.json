@@ -1,0 +1,34 @@
+{
+  "name": "automation-apimanager",
+  "version": "1.0.0",
+  "description": "E2E test for api manager using cucumber",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint -e 'node_modules/**' '**/*.ts'",
+    "build": "tsc",
+    "clean": "rm -rf  ./dist",
+    "lint-clean-build": "npm run lint && npm run clean && npm run build",
+    "pretest": "npm run clean && npm run build",
+    "test": "protractor dist/test/helper/protractor/protractor.conf.js",
+    "postinstall": "webdriver-manager update --gecko=false"
+  },
+  "keywords": [
+    "Automation",
+    "Api",
+    "Manager"
+  ],
+  "author": "Mulesoft",
+  "license": "MIT",
+  "devDependencies": {
+    "@mulesoft/tslint-config-automation": "0.0.3",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^3.1.0",
+    "protractor": "^5.2.1",
+    "protractor-cucumber-framework": "^4.1.1",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "typescript": "^2.6.2"
+  }
+}

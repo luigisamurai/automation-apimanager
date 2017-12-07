@@ -1,0 +1,28 @@
+### Node ###
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+### OSX ###
+*.DS_Store
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
+
+### Transpiled Folder ###
+dist
+
+### Test Results ###
+testresults
+
+### IDEA ###
+.idea
+.shelf
+/*.iml
+/*.ipr
+/*.iws
+/out
