@@ -8,7 +8,7 @@
     "build": "tsc",
     "clean": "rm -rf  ./dist",
     "lint-clean-build": "npm run lint && npm run clean && npm run build",
-    "pretest": "npm run clean && npm run build",
+    "pretest": "npm run lint-clean-build",
     "test": "protractor dist/test/helper/protractor/protractor.conf.js",
     "postinstall": "webdriver-manager update --gecko=false"
   },
@@ -21,6 +21,8 @@
   "license": "MIT",
   "devDependencies": {
     "@mulesoft/tslint-config-automation": "0.0.3",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/cucumber": "^2.1.0",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^3.1.0",
